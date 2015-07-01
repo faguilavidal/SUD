@@ -316,7 +316,7 @@ public class RegistroUsuario extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        new AccesoSud().configAccesoSud();
+        new AccesoSud2015().configAccesoSud();
     }//GEN-LAST:event_formWindowClosing
 
     private void jbtnReestablecerFormularioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnReestablecerFormularioActionPerformed
@@ -371,7 +371,7 @@ public class RegistroUsuario extends javax.swing.JFrame {
 
     private void jbtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnCancelarActionPerformed
         this.dispose();
-        new AccesoSud().configAccesoSud();
+        new AccesoSud2015().configAccesoSud();
     }//GEN-LAST:event_jbtnCancelarActionPerformed
 
     private void jbtnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnRegistrarActionPerformed
@@ -511,7 +511,7 @@ public class RegistroUsuario extends javax.swing.JFrame {
             {
                 case 1: JOptionPane.showMessageDialog(null, "Usuario registrado exitosamente", "Registros", JOptionPane.INFORMATION_MESSAGE);
                             this.dispose();
-                            new AccesoSud().configAccesoSud();
+                            new AccesoSud2015().configAccesoSud();
                             break;
                 case 1048: JOptionPane.showMessageDialog(null, "Debe ingresar todos los campos", "Registros", JOptionPane.ERROR_MESSAGE); 
                            break;

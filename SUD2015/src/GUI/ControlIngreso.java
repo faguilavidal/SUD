@@ -1524,7 +1524,7 @@ public class ControlIngreso extends javax.swing.JFrame {
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         dispose();
-        new AccesoSud().configAccesoSud();
+        new AccesoSud2015().configAccesoSud();
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jbtnEliminarPersonaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnEliminarPersonaActionPerformed

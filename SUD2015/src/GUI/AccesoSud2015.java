@@ -2,9 +2,9 @@ package GUI;
 
 import java.awt.event.KeyEvent;
 
-public class AccesoSud extends javax.swing.JFrame {
+public class AccesoSud2015 extends javax.swing.JFrame {
     
-    public AccesoSud() {
+    public AccesoSud2015() {
         initComponents();
     }
     
@@ -271,7 +271,7 @@ public class AccesoSud extends javax.swing.JFrame {
     }
     
     public static void configAccesoSud(){
-        AccesoSud a = new AccesoSud();
+        AccesoSud2015 a = new AccesoSud2015();
         a.setVisible(true);
         a.setLocationRelativeTo(null);
         a.setTitle("Acceso SUD");
@@ -292,25 +292,25 @@ public class AccesoSud extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AccesoSud.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AccesoSud2015.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AccesoSud.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AccesoSud2015.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AccesoSud.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AccesoSud2015.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AccesoSud.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AccesoSud2015.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                AccesoSud a = new AccesoSud();
+                AccesoSud2015 a = new AccesoSud2015();
                 a.setVisible(true);
                 a.setLocationRelativeTo(null);
                 a.setTitle("Acceso SUD");
                 a.jtxtUser.requestFocus();
-                configAccesoSud();
             }
         });
     }
