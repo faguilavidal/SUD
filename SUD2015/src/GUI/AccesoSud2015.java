@@ -253,21 +253,21 @@ public class AccesoSud2015 extends javax.swing.JFrame {
 
     private void validarAcceso(){
         String Usuario = jtxtUser.getText();
-            char[] pwEntregada = jpwContraseña.getPassword();
-            String passEntregada = new String(pwEntregada);
-            BLL.Usuario u = new BLL.Usuario().buscarUser(Usuario);
-            if(u != null)
+        char[] pwEntregada = jpwContraseña.getPassword();
+        String passEntregada = new String(pwEntregada);
+        BLL.Usuario u = new BLL.Usuario().buscarUser(Usuario);
+        if(u != null)
+        {
+            String passDataBase = u.getContraseña();
+            if (passEntregada.equals(passDataBase)) 
             {
-                String passDataBase = u.getContraseña();
-                if (passEntregada.equals(passDataBase)) 
-                {
-                    ControlIngreso c = new ControlIngreso();
-                    c.configControlSudFrame();
-                    this.setVisible(false);
-                }
-                else{this.jlblEstadoAcceso.setText("su Contraseña no es Valida");}    
-            }       
-            else{this.jlblEstadoAcceso.setText("Usuario no Existe");}
+                ControlIngreso c = new ControlIngreso();
+                c.configControlSudFrame();
+                this.setVisible(false);
+            }
+            else{this.jlblEstadoAcceso.setText("su Contraseña no es Valida");}    
+        }       
+        else{this.jlblEstadoAcceso.setText("Usuario no Existe");}
     }
     
     public static void configAccesoSud(){

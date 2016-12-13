@@ -1,9 +1,6 @@
 package GUI;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
 import javax.swing.JOptionPane;
 
 public class RegistroUsuario extends javax.swing.JFrame {
@@ -316,7 +313,7 @@ public class RegistroUsuario extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        new AccesoSud2015().configAccesoSud();
+        AccesoSud2015.configAccesoSud();
     }//GEN-LAST:event_formWindowClosing
 
     private void jbtnReestablecerFormularioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnReestablecerFormularioActionPerformed
@@ -371,7 +368,7 @@ public class RegistroUsuario extends javax.swing.JFrame {
 
     private void jbtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnCancelarActionPerformed
         this.dispose();
-        new AccesoSud2015().configAccesoSud();
+        AccesoSud2015.configAccesoSud();
     }//GEN-LAST:event_jbtnCancelarActionPerformed
 
     private void jbtnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnRegistrarActionPerformed
@@ -505,13 +502,12 @@ public class RegistroUsuario extends javax.swing.JFrame {
             }
             /*captura de año*/
             int año = Integer.parseInt(this.jcboAño.getSelectedItem().toString());
-
             int resultado = new BLL.Usuario().registrarUsuarioBLL(nuevoUser,pwNuevoUser,rut,nombre,año);
             switch(resultado)
             {
                 case 1: JOptionPane.showMessageDialog(null, "Usuario registrado exitosamente", "Registros", JOptionPane.INFORMATION_MESSAGE);
                             this.dispose();
-                            new AccesoSud2015().configAccesoSud();
+                            AccesoSud2015.configAccesoSud();
                             break;
                 case 1048: JOptionPane.showMessageDialog(null, "Debe ingresar todos los campos", "Registros", JOptionPane.ERROR_MESSAGE); 
                            break;
@@ -619,7 +615,7 @@ public class RegistroUsuario extends javax.swing.JFrame {
     jpwNewPassword.setBackground(Color.black);
     jtxtNewUser.setBackground(Color.black);
     jtxtNombre.setBackground(Color.black);
-    jtxtRut.setBackground(Color.black);;
+    jtxtRut.setBackground(Color.black);
     jcboAño.setBackground(Color.black);
     }
     
